@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    background: white;
+}
+
+.search {
+    margin: 0 auto;
+    max-width: 950px;
+    padding: 8px;
+}
+
+.search-container {
+    border: 1px solid #252525;
+    border-radius: 10px;
+    padding: .7rem;
+}
+
+.search-filter-btn {
+    display: flex;
+    margin: 4px;
+    gap: .5rem;
+}
+
+.filter-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    appearance: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.filter-btn:checked {
+    background-color: #ccc;
+}
+
+#a::before {
+    content: "A Check";
+}
+
+#b::before {
+    content: "B Check";
+}
+
+#c::before {
+    content: "C Check";
+}
+
+@media (min-width: 351px) {
+    .filter-btn {
+        background-color: aliceblue;
+        border: 1px solid #252525;
+        padding: 0.5em;
+        border-radius: 0.25em;
+        font-size: .9rem;
+        font-weight: 600;
+    }
+}
